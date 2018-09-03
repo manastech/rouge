@@ -103,6 +103,7 @@ module Rouge
         BEGIN END alias begin break case defined\? do else elsif end
         ensure for if ifdef in next redo rescue raise retry return super then
         undef unless until when while yield lib fun type of as
+        abstract
       )
 
       keywords_pseudo = %w(
@@ -110,6 +111,7 @@ module Rouge
         attr_accessor alias_method attr catch throw private module_function
         public protected true false nil __FILE__ __LINE__
         getter getter? getter! property property? property! struct record
+        spawn
       )
 
       builtins_g = %w(
